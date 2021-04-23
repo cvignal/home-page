@@ -11,35 +11,35 @@
 
   /* Light theme  */
   --accent: #4b8ec4; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #3a3a3a; /* Sceondary Foreground color */
+  --bg: #19171a; /* Background color */
+  --sbg: #201e21; /* Cards color */
+  --fg: #d8dee9; /* Foreground color */
+  --sfg: #3a3a3a; /* Secondary Foreground color */
 
   /* Image background  */
 
-  /* Uncoment this section to get the 
-    image wallpaper. You can also 
-    change the --imgcol value 
+  /* Uncoment this section to get the
+    image wallpaper. You can also
+    change the --imgcol value
     to make the filter to your own */
 
   /* --imgbg: url(/img/wal.jpg); */
   --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.7)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
   ); /* Filter color */
 }
 
 /* Dark theme  */
 .darktheme {
   --accent: #4b8ec4; /* Hover color */
-  --bg: #19171a; /* Background color */
-  --sbg: #201e21; /* Cards color */
-  --fg: #d8dee9; /* Foreground color */
-  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #3a3a3a; /* Sceondary Foreground color */
   --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
   ); /* Filter color */
 }
 
@@ -208,16 +208,16 @@ body {
   grid-column: 2;
 }
 .buttonLink__link-3 {
-  grid-row: 2;
-  grid-column: 1;
+  grid-row: 1;
+  grid-column: 3;
 }
 .buttonLink__link-4 {
   grid-row: 2;
-  grid-column: 2;
+  grid-column: 1;
 }
 .buttonLink__link-5 {
-  grid-row: 1;
-  grid-column: 3;
+  grid-row: 2;
+  grid-column: 2;
 }
 .buttonLink__link-6 {
   grid-row: 2;
