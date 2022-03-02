@@ -2,170 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="robots" content="noindex" />
     <title>Home</title>
-    <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel=" shortcut icon"
+      type="image/png"
+      href="assets/icons/favicon.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
+
+  <!--
+      ╔╗ ╔═╗╔╗╔╔╦╗╔═╗
+      ╠╩╗║╣ ║║║ ║ ║ ║
+      ╚═╝╚═╝╝╚╝ ╩ ╚═╝
+      -->
 
   <body class="">
     <button id="themeButton">
-      <i id="themeButton__icon" data-feather="moon"></i>
+      <i id="themeIcon" icon-name="moon"></i>
     </button>
     <div class="container">
       <!-- Clock and Greetings  -->
 
       <div class="timeBlock">
         <div class="clock">
-          <div id="hour" class=""></div>
-          <div id="separator" class=""></div>
-          <div id="minutes" class=""></div>
+          <div id="hour"></div>
+          <div id="separator"></div>
+          <div id="minutes"></div>
         </div>
-        <div id="greetings" class=""></div>
+        <div id="greetings"></div>
       </div>
 
       <!-- Date and Weather  -->
 
       <div class="weatherBlock">
-        <div class="weatherBlock__date">
-          <div id="month" class=""></div>
-          <div id="day" class=""></div>
+        <div class="date">
+          <div id="month"></div>
+          <div id="day"></div>
         </div>
-        <div class="weatherBlock__weather">
-          <div class="weather-icon">
-            <img src="icons/OneDark/unknown.png" />
+        <div class="weather">
+          <div class="weatherIcon">
+            <img src="assets/icons/OneDark/unknown.png" />
           </div>
-          <div class="temperature-value">
-            <p class="">- °<span class="g">c</span></p>
+          <div class="weatherValue">
+            <p>- °<span class="g">c</span></p>
           </div>
-          <div class="temperature-description">
-            <p class=""></p>
+          <div class="weatherDescription">
+            <p></p>
           </div>
         </div>
       </div>
 
-      <!-- Buttons Links  -->
-
-      <div class="buttonLink">
-        <a
-          target="blank"
-          href="https://mail.google.com/mail/u/1/#inbox"
-          class="buttonLink__link card buttonLink__link-1"
-        >
-          <i class="buttonLink__icon" data-feather="mail"></i>
-        </a>
-        <a
-          target="blank"
-          href="https://calendar.google.com/calendar/u/1/r"
-          class="buttonLink__link card buttonLink__link-2"
-        >
-          <i class="buttonLink__icon" data-feather="calendar"></i>
-        </a>
-        <a
-          href="https://trello.com/b/U17w9zrB/run-kbrw-x-rrg"
-          target="blank"
-          class="buttonLink__link card buttonLink__link-3"
-        >
-          <i class="buttonLink__icon" data-feather="trello"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://reddit.com/hot"
-          class="buttonLink__link card buttonLink__link-4"
-        >
-          <i class="buttonLink__icon" data-feather="globe"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.youtube.com/"
-          class="buttonLink__link card buttonLink__link-5"
-        >
-          <i class="buttonLink__icon" data-feather="youtube"></i>
-        </a>
-        <a
-          href="https://twitter.com/"
-          target="blank"
-          class="buttonLink__link card buttonLink__link-6"
-        >
-          <i class="buttonLink__icon" data-feather="twitter"></i>
-        </a>
-      </div>
-
-      <!-- Lists  -->
-
-      <div class="card list list__1">
-        <i class="list__head" data-feather="activity"></i>
-        <a
-          target="blank"
-          href="http://jenkins01.priv.cloud.kbrwadventure.com/view/RRG/"
-          class="list__link"
-          >Jenkins</a
-        >
-        <a
-          target="blank"
-          href="https://drive.google.com/drive/u/1/folders/1zSoNU73wSh1R_LNYLJjmiSsAdx_bCd6b"
-          class="list__link"
-          >Drive</a
-        >
-        <a
-          target="blank"
-          href="http://127.0.0.1:8005"
-          class="list__link"
-          >Admin local</a
-        >
-        <a
-          target="blank"
-          href="http://127.0.0.1:8006"
-          class="list__link"
-          >Picker local</a
-        >
-        <a
-          target="blank"
-          href="https://rrg-pilot-rrg-admin.kbrw.fr"
-          class="list__link"
-          >Admin pilot</a
-        >
-        <a
-          target="blank"
-          href="https://rrg-pilot-rrg-picker.kbrw.fr"
-          class="list__link"
-          >Picker pilot</a
-        >
-        <a
-          target="blank"
-          href="https://rrg-rrg-admin.kbrw.fr"
-          class="list__link"
-          >Admin prod</a
-        >
-        <a
-          target="blank"
-          href="https://rrg-rrg-picker.kbrw.fr"
-          class="list__link"
-          >Picker prod</a
-        >
-      </div>
-
-      <div class="card list list__2">
-        <i class="list__head" data-feather="coffee"></i>
-        <a href="https://www.linkedin.com" target="blank" class="list__link"
-          >LinkedIn</a
-        >
+      <div class="linksBlock" id="linksBlock">
+        <div class="linksBlockLeft" id="linksBlockLeft"></div>
+        <div class="linksBlockRight" id="linksBlockRight"></div>
       </div>
     </div>
 
-    <!-- Scrips  -->
+    <!-- Config  -->
+    <script src="config.js"></script>
 
-    <script src="js/time.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/greeting.js"></script>
-    <script src="js/weather.js"></script>
+    <!-- Scripts  -->
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/time.js"></script>
+    <script src="assets/js/greeting.js"></script>
+    <script src="assets/js/weather.js"></script>
+
+    <!-- Generators  -->
+    <script src="assets/js/buttons.js"></script>
+    <script src="assets/js/lists.js"></script>
+
+    <!-- Icons -->
     <script>
-      feather.replace();
+      lucide.createIcons();
     </script>
   </body>
 
-  <!-- Coded and designed by Miguel R. Ávila: https://github.com/MiguelRAvila -->
+  <!-- Developed and designed by Miguel Ávila: -->
+  <!-- https://avila.sh-->
 </html>
