@@ -55,13 +55,13 @@ const CONFIG = {
       id: '1',
       name: 'Mail',
       icon: 'mail',
-      link: 'https://mail.google.com/mail/u/1/#inbox'
+      link: 'https://mail.google.com/'
     },
     {
       id: '2',
       name: 'Calendar',
       icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/u/1/r',
+      link: 'https://calendar.google.com/',
     },
     {
       id: '3',
@@ -73,7 +73,7 @@ const CONFIG = {
       id: '5',
       name: 'Drive',
       icon: 'cloud',
-      link: 'https://drive.google.com/drive/u/1/folders/0B4cjvGDahqrOaXU2X05fWkdxQUE?resourcekey=0-YNuRpuVtQTHDcIb69yCgvg',
+      link: 'https://drive.google.com/drive/u/0/folders/0B4cjvGDahqrOaXU2X05fWkdxQUE?resourcekey=0-YNuRpuVtQTHDcIb69yCgvg',
     },
     {
       id: '4',
