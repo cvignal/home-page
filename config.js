@@ -23,7 +23,7 @@ const CONFIG = {
   greetingNight: 'Good night!',
 
   // Layout
-  bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
+  bentoLayout: 'buttons', // 'bento', 'lists', 'buttons'
 
   // Weather
   weatherKey: '5d65b74cabd2f4f36204d4e159f30cf9', // Write here your API Key
@@ -65,9 +65,9 @@ const CONFIG = {
     },
     {
       id: '3',
-      name: 'Linkedin',
-      icon: 'linkedin',
-      link: 'https://linkedin.com'
+      name: 'Github',
+      icon: 'github',
+      link: 'https://github.com'
     },
     {
       id: '5',
@@ -77,54 +77,54 @@ const CONFIG = {
     },
     {
       id: '4',
-      name: 'Youtube',
-      icon: 'youtube',
-      link: 'https://youtube.com/',
+      name: 'Hackernews',
+      icon: 'newspaper',
+      link: 'https://news.ycombinator.com/',
     },
     {
       id: '6',
-      name: 'Twitter',
-      icon: 'twitter',
-      link: 'https://twitter.com/',
+      name: 'Trello',
+      icon: 'trello',
+      link: 'https://trello.com/',
     },
   ],
 
   secondButtonsContainer: [
     {
       id: '1',
-      name: 'Music',
-      icon: 'headphones',
-      link: 'https://open.spotify.com',
+      name: 'Reddit',
+      icon: 'coffee',
+      link: 'https://reddit.com'
     },
     {
       id: '2',
-      name: 'twitter',
+      name: 'Twitter',
       icon: 'twitter',
       link: 'https://twitter.com/',
     },
     {
-      id: '3',
-      name: 'bot',
+      id: '5',
+      name: 'Discord',
       icon: 'bot',
       link: 'https://discord.com/app',
     },
     {
-      id: '4',
-      name: 'Amazon',
-      icon: 'shopping-bag',
-      link: 'https://amazon.com/',
+      id: '3',
+      name: 'Youtube',
+      icon: 'youtube',
+      link: 'https://youtube.com/',
     },
     {
-      id: '5',
-      name: 'Hashnode',
-      icon: 'pen-tool',
-      link: 'https://hashnode.com/',
+      id: '4',
+      name: 'Soundcloud',
+      icon: 'waves',
+      link: 'https://soundcloud.com/',
     },
     {
       id: '6',
-      name: 'Figma',
-      icon: 'figma',
-      link: 'https://figma.com/',
+      name: 'Linkedin',
+      icon: 'linkedin',
+      link: 'https://linkedin.com/',
     },
   ],
 
